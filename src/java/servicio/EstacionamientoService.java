@@ -27,10 +27,13 @@ public class EstacionamientoService {
         return dao.actualizar(e);
     }
 
-    public boolean eliminar(int id) {
-        return dao.eliminar(id);
+//+ in @RR 
+    public boolean eliminar(int id, String nuevoEstado) {
+        return dao.actualizarEstado(id, nuevoEstado);
     }
-    
-    
-    
+//+ fin @RR    
 }
+    
+    
+    
+

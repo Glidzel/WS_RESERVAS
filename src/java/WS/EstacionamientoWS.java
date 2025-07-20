@@ -35,6 +35,8 @@ public class EstacionamientoWS {
 
     @WebMethod(operationName = "eliminarEstacionamiento")
     public boolean eliminarEstacionamiento(@WebParam(name = "id") int id) {
-        return service.eliminar(id);
+        //+ in @RR 
+        return service.eliminar(id, "disponible");
+        //+ fin @RR 
     }
 }
